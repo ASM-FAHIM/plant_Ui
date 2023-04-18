@@ -59,7 +59,7 @@ class MyApp extends StatelessWidget {
                 ? const Locale('en', 'US')
                 : const Locale('bn', 'BD'),
             theme: ThemeData(
-              scaffoldBackgroundColor: KColor.dashBack.color,
+              scaffoldBackgroundColor: Colors.white,
               appBarTheme: AppBarTheme(
                 color: KColor.secondary.color, //<-- SEE HERE
               ),

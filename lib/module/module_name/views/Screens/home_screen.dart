@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:plant_app/global/widget/global_svg_loader.dart';
-import 'package:plant_app/module/module_name/views/components/body.dart';
+import 'package:plant_app/module/module_name/views/Screens/components/body.dart';
 import 'package:plant_app/utils/enum.dart';
 import 'package:plant_app/utils/styles/k_colors.dart';
+
+import '../components/my_btm_nav_bar.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -14,7 +16,11 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: buildAppbar(), body: Body());
+    return Scaffold(
+      appBar: buildAppbar(),
+      body: Body(),
+      bottomNavigationBar: BottomNavBar(),
+    );
   }
 
   AppBar buildAppbar() {
